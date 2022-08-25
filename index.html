@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<style>
+  h1,
+  h2 {
+    font-family: Lato;
+  }
+</style>
+
+<body>
+  <div id="pixi-container" width="640" height="480"></div>
+  <script type="module" src="/src/main.ts"></script>
+
+  <div id="app">
+    <template id="custom-title-template">
+      <style>
+        h1 {
+          font-size: 1rem;
+          color: #000;
+          font-family: Helvetica;
+          text-align: right;
+        }
+      </style>
+      <h1>Templated title!</h1>
+      <p>lkj</p>
+      <ul>
+        <li>1</li>
+        <li>2</li>
+      </ul>
+    </template>
+
+    <div id="root">
+      <div className="App">
+        <h1>title</h1>
+        <my-title></my-title>
+        <hello-world-element name="test"></hello-world-element>
+        <incapsulated-title></incapsulated-title>
+
+        <clickable-title></clickable-title>
+        <clickable-title></clickable-title>
+        <clickable-title></clickable-title>
+
+        <custom-title></custom-title>
+        <custom-title></custom-title>
+
+        <counter-element value="5" amount="3"></counter-element>
+        <counter-element value="7" amount="abc"></counter-element>
+
+        <disabled-title disabled></disabled-title>
+        <my-counter value="100" step="5" max="150" min="2"></my-counter>
+        <article>
+          <h2>Sample heading</h2>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            pulvinar sed justo sed viverra. Aliquam ac scelerisque tellus.
+            Vivamus porttitor nunc vel nibh rutrum hendrerit. Donec viverra
+            vestibulum pretium. Mauris at eros vitae ante pellentesque bibendum.
+            Etiam et blandit purus, nec aliquam libero. Etiam leo felis,
+            pulvinar et diam id, sagittis pulvinar diam. Nunc pellentesque
+            rutrum sapien, sed faucibus urna sodales in. Sed tortor nisl,
+            egestas nec egestas luctus, faucibus vitae purus. Ut elit nunc,
+            pretium eget fermentum id, accumsan et velit. Sed mattis velit diam,
+            a elementum nunc facilisis sit amet.
+          </p>
+
+          <p>
+            Pellentesque ornare tellus sit amet massa tincidunt congue. Morbi
+            cursus, tellus vitae pulvinar dictum, dui turpis faucibus ipsum, nec
+            hendrerit augue nisi et enim. Curabitur felis metus, euismod et
+            augue et, luctus dignissim metus. Mauris placerat tellus id
+            efficitur ornare. Cras enim urna, vestibulum vel molestie vitae,
+            mollis vitae eros. Sed lacinia scelerisque diam, a varius urna
+            iaculis ut. Nam lacinia, velit consequat venenatis pellentesque, leo
+            tortor porttitor est, sit amet accumsan ex lectus eget ipsum.
+            Quisque luctus, ex ac fringilla tincidunt, risus mauris sagittis
+            mauris, at iaculis mauris purus eget neque. Donec viverra in ex sed
+            ullamcorper. In ac nisi vel enim accumsan feugiat et sed augue.
+            Donec nisl metus, sollicitudin eu tempus a, scelerisque sed diam.
+          </p>
+
+          <p is="word-count"></p>
+        </article>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
